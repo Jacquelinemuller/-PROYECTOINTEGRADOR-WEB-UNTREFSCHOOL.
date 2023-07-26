@@ -1,19 +1,21 @@
-*{
+*{  
     box-sizing: content-box;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     list-style: none;
-    overflow-x: hidden;
-    }
+       
+   }
     html{
         scroll-behavior: smooth;
     }
+
 
 a:link, a:visited, a:active ::before {
     color: #effeef;
     text-decoration: none;
    
 }
+
 .menu{
     display: flex;
 
@@ -26,35 +28,39 @@ a:link, a:visited, a:active ::before {
 }
 
 #encabezado{
+    position: relative;
     display: flex;
     background-color: #00425a;
-    margin-top: 5px;    
+    margin-top: 5px;
+    padding-top: 70px;    
 }
 
 #logo{
-   display: flex;
-    width: 100px;
-    padding: 3px;
-    margin-right: 20px;
+    position: absolute;
+    top: -5px;
+    width: 80px;
+    margin-left: 20px;
+    padding: 10px;
+    margin-right: 500px;
     z-index: 3;
+
  }
 
 #inicio{
+  overflow-x: hidden;
    display: flex;
    width: 100%;
    justify-content: center;
    align-items: center;
    background-color: #00425a;
    position: fixed;
-   top: 10px;
+   top: 20px;
    font-size: 22px;
    font-family:'Belanosima', sans-serif;
     text-decoration: none;
     color: #fc7300;
+    padding: 4px;
     z-index: 2;
-    padding: 15px;
-    
-
 }
 
 li{
@@ -63,61 +69,55 @@ li{
 
 
 #Contacto{
+    
     display: flex;
    align-items: center;
-    
-    
-}
+   }
 #mail{
     display: flex;
-    width: 25px;
-    background-color: #1F8A70  ;
-    padding: 8px;
+    
+    width: 48px;
+    background-color: #1F8A70;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    
-   
-}
+    }
 #formularioc{
-   
    padding: 8px;
    background-color:  #1F8A70;
    border-top-right-radius: 5px;
    border-bottom-right-radius: 5px;
    margin-left: 5px;
-
 }
 #edificio{
-width: 100%;
-margin: 0%;
-margin-top: 2px;  
+   
+  width: 100%;
+  margin: 0%;
+  margin-top: 2px;  
 }
-
+#titulos{
+    top: -200px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,66,90, 0.5);
+}
 #titulo{
-    position: absolute;
-    top: 300px;
-    padding-bottom: 50px;
-    font-size: 500%;
+    font-size: 80px;
     font-family:'Belanosima', sans-serif;
     color: #effeef;
     text-align: center;
-    width: 100%;
     text-decoration: underline;
-    background-color: rgba(0,66,90, 0.5);
+    
 }
 
 #subtitulo{
-    position: absolute;
-    top: 370px;
-    margin-left: 0px;
+   
     font-size: 225%;
     font-family:'Belanosima', sans-serif;
     color: #effeef;
     text-align: center;
-    width: 100%;
     letter-spacing: 20px;
     
-}
+}/*
 ion-icon{
     
     color: #fc7300;
@@ -127,42 +127,61 @@ ion-icon{
     right: 15px;
     z-index: 7;  
      
-}
-
+}*/
 #quien{
-    position: relative;
+    
+    
+}
+#quiennav{
+    position: absolute;
+    top: 1100px;
+     
+    
 }
 #backquien {
-    width: 115%;
-}
-#descripcionQuienes{
     position: absolute;
-    top: 80px;
-    
-}
-    #tituloquienes {
-       position:absolute;
-        top: 15px;
-        padding-top: 30px;
-        margin-left: 200px;
-        font-size: 3rem;
-        margin-right: 185px;
-        font-family: 'Belanosima', sans-serif;
-    }
-    #quienes{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-left: 100px;
-        margin-right: 100px;
-        margin: 50px;
-        margin-top: 190px;
-        
+    width: 100%;
+    overflow-x: hidden;}
+
+#tituloquienes {
+    margin-top: 130px;
+    padding-top: 30px;
+    margin-left: 200px;
+    font-size: 3rem;
+    margin-right: 185px;
+    font-family: 'Belanosima', sans-serif;
      }
-   #imgquienes{
+#descripcionQuienes{
     
-    width: 300%;
-    top:50px;
+    margin-top:  65px;
+    margin-bottom: 65px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}    
+#imgquienes{
+    width: 35%;
+    border-radius:  138px 10px 126px 10px;
+    -webkit-border-radio: 138px 10px 126px 10px;
+    -moz-border-radius: 138px 10px 126px 10px;
+    box-shadow: 4px 6px 5px -1px rgba(3,54,54,0.42); 
+    -webkit-box-shadow: 4px 6px 5px -1px rgba(3,54,54,0.42);
+    -moz-box-shadow: 4px 6px 5px -1px rgba(3,54,54,0.42);
+}
+#pquienes{
+    width: 55%;
+    font-family: 'Indie Flower', cursiva;
+    color: #00425a;
+    font: size 50%;
+    font-weight: 700;
+    letter-spacing: 2px;} 
+/*
+   #imgquienes{
+    position: absolute;
+    display: flex;
+    width: 40%;
+    top:150px;
     margin-left:60px ;
     border-radius:  138px 10px 126px 10px;
     -webkit-border-radio: 138px 10px 126px 10px;
@@ -173,44 +192,37 @@ ion-icon{
    }
   
  #pquienes{
-    margin-left: 200px;
+    position: absolute;
+    top: 150px;
+    margin-left: 50%;
     font-family: 'Indie Flower', cursiva;
     color: #00425a;
-    font-size:23px;
+    font: size 50%;
     font-weight: 700;
     letter-spacing: 2px;
     
-  }
+  }*/
 
-#subir{
+/*#subir{
     position: relative;
     top: 80px;
-}
-
-#eleccion{
-    position: relative;
-
-}
-#eleccionBg {
-    width: 100%
-    
+}*/
+#elecciond{
+    position: absolute;
+    top: 1950px;
 }
 #tituloelec{
-     
-     font-size: 3rem;
-     font-family: 'Belanosima', sans-serif;
-     color:#fc7300;
-     margin-top: 80px;
-     
-     padding: 20px;
-     margin-left: 35%;
-     
-    }
+    margin-top: 150px;
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Belanosima', sans-serif;
+    color:#fc7300;
+    margin-bottom: 100px;    
+}
+   
 #video{
     width: 45%;
-    
     margin-left: 25%;
-    top: 200px;
     border-radius:  138px 10px 126px 10px;
     -webkit-border-radio: 138px 10px 126px 10px;
     -moz-border-radius: 138px 10px 126px 10px;
@@ -220,88 +232,141 @@ ion-icon{
    
 }
 #destacado {
-    position: relative;
     display: grid;
-    grid-template-columns: repeat( 3, 1fr);
-    grid-gap: 10px;
-    margin-left: 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr; 
     margin-top: 50px;
-    margin-right: 100px;
+    margin-bottom: 80px;
+    text-align: center;
     font-family: 'Indie Flower';
-    margin-bottom: 20px;
+  
 }  
 
-    h3{
-        font-size: 40px;
-        color: #fc7300;
-    }
-     h4{
+.eleccionA{
+    font-weight: bold;
+    font-size: 40px;
+    color: #fc7300;
+}
+#elecccionB{
         font-size: 25px;
      }
-    .div1 { grid-area: 1 / 1 / 2 / 2; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  
-  }
-    .div2 { grid-area: 1 / 2 / 2 / 3;
-        display: flex;
-        flex-direction: column;
-        align-items: center; }
-    .div3 { grid-area: 1 / 3 / 2 / 4;
-        display: flex;
-        flex-direction: column;
-        align-items: center; }
-    .div4 { grid-area: 2 / 1 / 3 / 2;
-        display: flex;
-        flex-direction: column;
-        align-items: center; }
-    .div5 { grid-area: 2 / 2 / 3 / 3;
-        display: flex;
-        flex-direction: column;
-        align-items: center; }
-    .div6 { grid-area: 2 / 3 / 3 / 4;
-        display: flex;
-        flex-direction: column;
-        align-items: center; }
 
-#seccion3{
-    position: relative;
-}
-#bg3{
-    width: 100%;
-    top: -100px;
-    height: 400px;
-}
+     #proEdu{
+        margin-top: 
+     }
+ 
+    
+
+
 #propuesta{
-    position:absolute;
-        top: 80px;
-        padding-top: 30px;
+       margin-top: 200px;
+       margin-bottom: 100px;
         text-align: center;
         font-size: 3rem;
-        margin-left: 50px;
-       color: #00425a;
+        color: #00425a;
         font-family: 'Belanosima';
+        padding-top: 100px;
 }
 #educativa  {
-    position:absolute ;
-    top: 250px;
     display: flex;
     flex-direction: row;
     flex-flow: wrap;
     text-align: center;
-    padding: 50px;
+    justify-content: center;
     gap: 80px;
-    margin-left: 220px;
     font-family: 'Indie Flower', cursiva;
     font-size: 30px;
     font-weight: 900;
     font-stretch: expanded;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 150px;
 
 }
-.eduimg {
+.eduimg { 
     width: 300px;
     border-radius: 100%;
-    border: 3px solid #050505;
-    margin-bottom: 50px;
+    border: 7px solid #050505;
+    margin-bottom: 20px;
+}
+
+
+#noti{
+   
+   }
+
+#noticias{
+    margin: 70px;
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    font-family: 'Indie Flower', cursiva;
+    font-weight: 800;
+}
+.card{
+   
+    border-color: #1F8A70;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+#notic{
+   
+}
+
+
+#tituloNoticias{
+
+    text-align: center;
+    font-family:'Belanosima';
+    color: #1F8A70;
+    font-size: 3rem;
+    margin-top: 300;
+    padding-top: 100px;
+    
+    
+}
+#footer{
+    font-family:'Belanosima';
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    background-color: #1F8A70;
+    color: #effeef;
+    gap: 200px;
+    padding: 100px;
+}
+#redesSociales{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    font-size: 30px;
+    gap: 20px;
+    color: #effeef;
+    align-items: start;
+   
+    }
+    #sociales{
+        font-size: 35px;
+        letter-spacing: 5px;
+        padding-bottom: 5px;
+        
+    }
+   #escuela{
+    font-size: 40px;
+    padding-bottom: 20px;
+    text-decoration: underline
+   }
+#contactos{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 25px;
+    letter-spacing: 2px;
+    align-items:flex-end;
+}
+
+ion-icon{
+    color: white;
+    font-size: 2rem;
 }
