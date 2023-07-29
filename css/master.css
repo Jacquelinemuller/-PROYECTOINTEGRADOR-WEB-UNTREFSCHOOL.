@@ -3,6 +3,7 @@
     margin: 0 auto;
     padding: 0;
     list-style: none;
+    
        
    }
     html{
@@ -13,92 +14,38 @@
 a:link, a:visited, a:active ::before {
     color: #effeef;
     text-decoration: none;
-   
-}
-
-.menu{
-    display: flex;
-
-    
-}
-.menu a:hover {
-  color: #fc7300;
-  transition: 1s;
-   
-}
-
-#encabezado{
-    position: relative;
-    display: flex;
-    background-color: #00425a;
-    margin-top: 5px;
-    padding-top: 70px;    
-}
-
+   }
 #logo{
     position: absolute;
-    top: -5px;
-    width: 80px;
-    margin-left: 20px;
+    top: 45px;
+    width: 150px;
+    margin-left: 5px;
     padding: 10px;
     margin-right: 500px;
-    z-index: 3;
-
- }
-
-#inicio{
-  overflow-x: hidden;
-   display: flex;
-   width: 100%;
-   justify-content: center;
-   align-items: center;
-   background-color: #00425a;
-   position: fixed;
-   top: 20px;
-   font-size: 22px;
-   font-family:'Belanosima', sans-serif;
-    text-decoration: none;
-    color: #fc7300;
-    padding: 4px;
+    z-index: 5; 
+    }
+ #NAV {
     z-index: 2;
-}
-
+    background-color: #00425a;
+    margin-bottom: 25PX;
+ }
+  
 li{
     margin-left: 50px;
 }
 
-
-#Contacto{
-    
-    display: flex;
-   align-items: center;
-   }
-#mail{
-    display: flex;
-    
-    width: 48px;
-    background-color: #1F8A70;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    }
-#formularioc{
-   padding: 8px;
-   background-color:  #1F8A70;
-   border-top-right-radius: 5px;
-   border-bottom-right-radius: 5px;
-   margin-left: 5px;
-}
-#edificio{
-   
-  width: 100%;
-  margin: 0%;
-  margin-top: 2px;  
-}
+#fondoedificio{
+    position: relative;
+    background-image: url(../img/edificiocentral.jpg);
+    background-size: cover; }
+  
 #titulos{
+    
+    padding-top: 300px;
     top: -200px;
     display: flex;
     flex-direction: column;
-    background-color: rgba(0,66,90, 0.5);
+
 }
 #titulo{
     font-size: 80px;
@@ -106,8 +53,17 @@ li{
     color: #effeef;
     text-align: center;
     text-decoration: underline;
-    
+    z-index: 2;
+    }
+#fodotitulo{
+    position: absolute;
+    top: 300px;
+    width: 100%; 
+    height: 150px; 
+    background-color: rgba(0,66,90, 0.5);
+    z-index: 0;
 }
+
 
 #subtitulo{
    
@@ -116,36 +72,24 @@ li{
     color: #effeef;
     text-align: center;
     letter-spacing: 20px;
-    
-}/*
-ion-icon{
-    
-    color: #fc7300;
-    font-size: 60px;
-    position:fixed;
-    top: 500px;
-    right: 15px;
-    z-index: 7;  
-     
-}*/
-#quien{
-    
-    
+    padding-bottom: 300px;
+    z-index: 2;
 }
 #quiennav{
     position: absolute;
-    top: 1100px;
+    top: 800px;
      
-    
+}    
+#fondoquienes{
+
+ background-image: url(../img/fondoquienes.jpg);
+
 }
-#backquien {
-    position: absolute;
-    width: 100%;
-    overflow-x: hidden;}
+
 
 #tituloquienes {
-    margin-top: 130px;
-    padding-top: 30px;
+    margin-top: 30px;
+    padding-top: 90px;
     margin-left: 200px;
     font-size: 3rem;
     margin-right: 185px;
@@ -162,12 +106,14 @@ ion-icon{
 }    
 #imgquienes{
     width: 35%;
+    margin-bottom: 80px;
     border-radius:  138px 10px 126px 10px;
     -webkit-border-radio: 138px 10px 126px 10px;
     -moz-border-radius: 138px 10px 126px 10px;
     box-shadow: 4px 6px 5px -1px rgba(3,54,54,0.42); 
     -webkit-box-shadow: 4px 6px 5px -1px rgba(3,54,54,0.42);
     -moz-box-shadow: 4px 6px 5px -1px rgba(3,54,54,0.42);
+    
 }
 #pquienes{
     width: 55%;
@@ -175,41 +121,13 @@ ion-icon{
     color: #00425a;
     font: size 50%;
     font-weight: 700;
-    letter-spacing: 2px;} 
-/*
-   #imgquienes{
-    position: absolute;
-    display: flex;
-    width: 40%;
-    top:150px;
-    margin-left:60px ;
-    border-radius:  138px 10px 126px 10px;
-    -webkit-border-radio: 138px 10px 126px 10px;
-    -moz-border-radius: 138px 10px 126px 10px;
-    box-shadow: 4px 6px 5px -1px rgba(3,54,54,0.42); 
-    -webkit-box-shadow: 4px 6px 5px -1px rgba(3,54,54,0.42);
-    -moz-box-shadow: 4px 6px 5px -1px rgba(3,54,54,0.42);
-   }
-  
- #pquienes{
-    position: absolute;
-    top: 150px;
-    margin-left: 50%;
-    font-family: 'Indie Flower', cursiva;
-    color: #00425a;
-    font: size 50%;
-    font-weight: 700;
-    letter-spacing: 2px;
-    
-  }*/
+    letter-spacing: 2px; 
+    }
 
-/*#subir{
-    position: relative;
-    top: 80px;
-}*/
+
 #elecciond{
     position: absolute;
-    top: 1950px;
+    top: 1550px;
 }
 #tituloelec{
     margin-top: 150px;
@@ -231,16 +149,30 @@ ion-icon{
     -moz-box-shadow: 4px 6px 5px -1px rgba(3,54,54,0.42);
    
 }
-#destacado {
+@media (min-width: 768px) {
+    #destacado {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; 
     margin-top: 50px;
     margin-bottom: 80px;
     text-align: center;
     font-family: 'Indie Flower';
   
-}  
+}  }
+
+@media (min-width: 1200px)  
+   {#destacado {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr; 
+    margin-top: 50px;
+    margin-bottom: 80px;
+    text-align: center;
+    font-family: 'Indie Flower';
+
+}}
+
 
 .eleccionA{
     font-weight: bold;
@@ -250,13 +182,10 @@ ion-icon{
 #elecccionB{
         font-size: 25px;
      }
-
-     #proEdu{
-        margin-top: 
-     }
- 
-    
-
+     
+#fondoprop{
+    background-image: url("../img/fondoeleccion3.jpeg")
+}
 
 #propuesta{
        margin-top: 200px;
@@ -289,13 +218,7 @@ ion-icon{
     border: 7px solid #050505;
     margin-bottom: 20px;
 }
-
-
-#noti{
-   
-   }
-
-#noticias{
+    #noticias{
     margin: 70px;
     display: flex;
     justify-content: center;
@@ -310,10 +233,6 @@ ion-icon{
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
-#notic{
-   
-}
-
 
 #tituloNoticias{
 
@@ -322,34 +241,26 @@ ion-icon{
     color: #1F8A70;
     font-size: 3rem;
     margin-top: 300;
-    padding-top: 100px;
-    
-    
+    padding-top: 100px;    
 }
 #footer{
     font-family:'Belanosima';
     display: flex;
+    flex-flow: wrap;
     justify-content: center;
-    align-items:flex-start;
     background-color: #1F8A70;
     color: #effeef;
-    gap: 200px;
     padding: 100px;
 }
 #redesSociales{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    font-size: 30px;
-    gap: 20px;
-    color: #effeef;
-    align-items: start;
-   
-    }
-    #sociales{
+    display: flex;
+}
+
+#sociales{
         font-size: 35px;
         letter-spacing: 5px;
         padding-bottom: 5px;
-        
+        text-align: center;        
     }
    #escuela{
     font-size: 40px;
@@ -370,3 +281,29 @@ ion-icon{
     color: white;
     font-size: 2rem;
 }
+#Contacto{
+    display: flex;
+    align-items: center;
+    margin-left: -30px;
+    }
+ #mail{
+     display: flex;
+     width: 48px;
+     background-color: #00425a;
+     border-top-left-radius: 5px;
+     border-bottom-left-radius: 5px;
+     box-shadow: 7px 5px 5px -1px rgba(8,8,8,0.32);
+     -webkit-box-shadow: 7px 5px 5px -1px rgba(8,8,8,0.32);
+      -moz-box-shadow: 7px 5px 5px -1px rgba(8,8,8,0.32);
+     }
+ #formularioc{
+    padding: 5px;
+    background-color: #00425a;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-left: 5px;
+    box-shadow: 7px 5px 5px -1px rgba(8,8,8,0.32);
+-webkit-box-shadow: 7px 5px 5px -1px rgba(8,8,8,0.32);
+-moz-box-shadow: 7px 5px 5px -1px rgba(8,8,8,0.32);
+ }
+
